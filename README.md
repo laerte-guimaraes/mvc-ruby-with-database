@@ -16,6 +16,8 @@ Will be create a **tasks** model with params [**description**, **status**]
 ## 
 
 ## UPDATE MODEL
+
+### ADDING COLUMNS
 For this, necessary update a model with command:
 ````sh
 rails generate migration Add@migrationNameTo@modelName @param1:@type @param2:@type
@@ -27,6 +29,19 @@ rails generate migration AddSomeColumnsToTasks elapsed_time:integer difficulty:i
 ````
 
 Will be update a **tasks** model, adding params [**elapsed_time**, **difficulty**]
+
+### REMOVING COLUMNS
+For this, necessary update a model with command:
+````sh
+rails generate migration Remove@migrationNameFrom@modelName @param1:@type @param2:@type
+````
+
+Ex:
+````sh
+rails generate migration RemoveSomeColumnsFromRecipe elapsed_time:integer difficulty:integer
+````
+
+Will be update a **tasks** model, removing params [**elapsed_time**, **difficulty**]
 
 ## 
 
